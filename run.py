@@ -1,12 +1,10 @@
 import streamlit as st
-from clarifai.client.model import Model
 import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 
 import os
-os.environ["CLARIFAI_PAT"] = "1962b29eaa6a4c259899f02d08500b05"
 st.title("Data Analysis with InsightSphere! :coffee:")
 if st.button("Refresh"):
     st.rerun()
